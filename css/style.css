@@ -1,0 +1,549 @@
+/***********
+MEDIA QUERIES
+*************/
+@media only screen and (max-width: 950px) {
+  body {
+    margin: 0 !important;
+  }
+
+  html {
+    font-size: 50% !important;
+  }
+
+  nav.sidebar {
+    display: none;
+  }
+
+  main.main {
+    margin-left: unset;
+  }
+
+  nav.sm-navbar {
+    display: block;
+  }
+
+  .sm-navbar-ul a.nav-link.active::after,
+  .sm-navbar-ul a.nav-link:hover::after {
+    left: 0;
+  }
+
+  div.carousel-caption {
+    font-size: 2.5rem;
+  }
+}
+
+/***********
+GENERAL CODE
+*************/
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  margin: 0 10%;
+  font-family: 'Playfair Display SC';
+  overflow-x: hidden;
+}
+
+html {
+  -webkit-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+body::-webkit-scrollbar {
+  width: .7rem;
+} 
+body::-webkit-scrollbar-thumb {
+  background-color:  #43BF87;
+  border-radius: 45px;
+}
+.btn:focus,
+.btn,
+button:focus,
+.btn:not(:disabled):not(.disabled).active:focus,
+.btn:not(:disabled):not(.disabled):active:focus,
+.show>.btn.dropdown-toggle:focus {
+  outline: unset;
+  box-shadow: unset;
+  border: unset;
+}
+
+/***********
+ANIMATIONS
+*************/
+@keyframes navanimation {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/***********
+SMALL NAVBAR
+*************/
+.sm-navbar {
+  display: none;
+}
+
+.navbar-brand {
+  display: unset;
+}
+
+.sm-navbar-brand-Photo {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.sm-navbar-brand-name {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sm-navbar-brand-name h3,
+.sidebar-name h3 {
+  font-weight: 700;
+}
+
+.sm-navbar-brand-name h6,
+.sidebar-name h6 {
+  font-weight: 400;
+}
+
+button.navbar-toggler {
+  margin-top: 1.5rem;
+  border: unset;
+  float: right;
+}
+
+.sm-navbar-ul {
+  font-family: 'Quicksand';
+}
+
+.sm-navbar-ul .nav-link.active,
+.sm-navbar-ul .nav-link:hover {
+  color: #43BF87 !important;
+  background-color: unset;
+
+}
+
+.sm-navbar-ul .nav-link.active::after,
+.sm-navbar-ul .nav-link:hover::after {
+  content: " ";
+  top: 3.5rem;
+  left: 14rem;
+  width: 7.5rem;
+  height: 0.1rem;
+  background-color:#43BF87;
+  position: absolute;
+  animation-name: navanimation;
+  animation-duration: 0.8s;
+}
+
+/***********
+SIDEBAR
+*************/
+.sidebar {
+  height: 100vh;
+  border-right: unset;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 30rem;
+  background-color: #F2F3F7 !important;
+  display: grid;
+  grid-template-rows: 1fr max-content 1fr;
+}
+
+.sidebar.bg-light {
+  background-color: #F2F3F7 !important;
+}
+
+.sidebar-menu {
+  grid-row: 2 /3;
+}
+
+.sidebar-myPhoto {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  justify-self: center;
+}
+
+.sidebar-name {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.sidebar-nav {
+  font-family: 'Quicksand' !important;
+  font-weight: 100;
+}
+
+.sidebar .nav-item {
+  width: 100%;
+}
+
+.sidebar .nav-item+.nav-item {
+  margin-left: 0;
+}
+
+.sidebar .nav-link {
+  border-radius: 0;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  color: black;
+  font-weight: lighter;
+  padding-bottom: 0.2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+  color: #43BF87 !important;
+  background-color: unset;
+}
+
+.nav-pills .nav-link.active::after,
+.nav-pills .nav-link:hover::after {
+  content: " ";
+  top: 3.5rem;
+  left: 11.4rem;
+  width: 7.5rem;
+  height: 0.1rem;
+  background-color: #43BF87;
+  position: absolute;
+  animation-name: navanimation;
+  animation-duration: 0.8s;
+}
+
+/***********
+CAROUSEL HOME
+*************/
+main {
+  margin-left: 30rem;
+}
+
+.carousel {
+  position: relative;
+  height: 100vh;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  right: unset;
+  left: 0;
+  z-index: 15;
+  display: block;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 2rem;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  border: 0.2rem solid #43BF87;
+  color: white;
+  background-color: white;
+  opacity: 1;
+  width: 1rem;
+  height: 1rem;
+}
+
+.carousel-indicators li.active {
+  color:#43BF87;
+  background-color:#43BF87;
+}
+
+.carousel-item img {
+  height: 100vh;
+  width: 100%;
+}
+
+.carousel-caption {
+  font-size: 3rem;
+  font-family: 'Quicksand';
+  font-weight: 200;
+  position: absolute;
+  right: unset;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  color: #fff;
+  text-align: center;
+}
+
+.carousel-caption-author {
+  font-style: italic;
+  color: #43BF87;
+  font-weight: 400;
+  font-family: 'Playfair Display SC';
+}
+
+/***********
+SKILLS
+*************/
+.skills{
+  padding: 7rem 2rem 7rem 2rem;
+}
+.sm-head {
+  font-size: 1rem;
+  color: #603162;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  margin-bottom: 1rem;
+}
+
+.lg-head {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  line-height: 1.8;
+  color:#603162;
+}
+
+.bg-html {
+  background-color: #e44d26;
+}
+
+.bg-css {
+  background-color: #0071bb;
+}
+
+.bg-sass {
+  background-color: #cf649a;
+}
+
+.bg-bootstrap {
+  background-color: #563D7C;
+}
+
+.bg-bulma {
+  background-color: #00d1b2;
+}
+
+.bg-responsive {
+  background-color: #a1d0e0;
+}
+
+.bg-javascript {
+  background-color: #f7e018;
+}
+
+.bg-pug {
+  background-color: #A86454;
+}
+
+.bg-gulp {
+  background-color: #cf4647;
+}
+.bg-git{
+    background-color: #f54d27;
+}
+.bg-ajax{
+    background-color: #161616;
+}
+
+/**********
+EXPERIENCE
+**********/
+.experience{
+  padding: 7rem 2rem 7rem 2rem;
+}
+.experience .ex-content {
+  margin-left: 2rem;
+}
+
+.experience .ex-content h1 {
+  color: #2fa499;
+}
+
+.experience .ex-content i {
+  font-size: 2rem;
+}
+
+.experience .ex-content-p {
+  margin: 2rem auto 2rem 5rem;
+}
+
+.experience .ex-content-p h3 {
+  color: #EA3A4A;
+}
+
+.experience .ex-content-p p {
+  font-family: 'Quicksand' !important;
+  font-size: 1.6rem;
+}
+
+/**********
+WORK
+**********/
+.work{
+  padding: 7rem 2rem 7rem 2rem;
+}
+.work .card {
+  height: 19.384rem;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.work .card:hover .card-overlay {
+  opacity: 1;
+}
+
+.work .card-image {
+  height: 100%;
+  width: 100%;
+}
+
+.work .card-overlay {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(251,105,121,0.8);
+  color: white;
+  transition: all .5s;
+}
+
+.work .card-link:link,
+.work .card-link:visited {
+  color: white;
+  font-size: 1.6rem;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+[class*="col-"] {
+  margin-bottom: 2rem;
+}
+
+/*********
+CONTACT
+*********/
+.contact{
+  padding: 7rem 2rem 1rem 2rem;
+}
+.contact .contact-list {
+  margin-top: 5rem;
+}
+
+.contact a:link,
+.contact a:visited {
+  text-decoration: none;
+  margin: 5rem;
+  transition: all .5s;
+}
+
+.contact a img {
+  transition: all .5s;
+  margin-bottom: 3rem;
+}
+
+.contact a:hover img {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.sendSms{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-top: 5rem;
+}
+.textSms{
+  border-radius: 15px;
+  display: block;
+  padding: 1.5rem;
+  font-size: 1.1rem;
+  border: solid 1px rgb(158, 158, 158);
+  transition: all .5s;
+}
+.emailSms,.nameSms{
+  border-radius: 10px;
+  display: block;
+  font-size: 1.1rem;
+  padding: 1rem;
+  width: 100%;
+  border: solid 1px rgb(158, 158, 158);
+  transition: all .3s;
+}
+.textSms:focus,
+.emailSms:focus,
+.nameSms:focus{
+  outline: none;
+  border: solid 1px #43BF87;
+}
+.smsForm{
+  align-self: center;
+  font-family: 'Quicksand';
+}
+.mail{
+  width: 25rem;
+  align-self: start;
+}
+.btn{
+  color: white;
+  background-color:#43BF87;
+  margin-top: 3rem;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  transition: all 0.5s;
+  border: solid 1px #43BF87;
+}
+.btn:hover,
+.btn:active,
+.btn:focus{
+  color: #43BF87;
+  background-color: white;
+}
+input[type="submit"] {
+  display: contents;
+}
+#nameFeedback{
+    color: red;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.alert-success{
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-family: 'Quicksand';
+}
+

@@ -1,0 +1,618 @@
+@media only screen and (max-width:990px) {
+    .navbar-brand {
+        display: none;
+    }
+
+    .header-logo {
+        display: block !important;
+        text-align: center;
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .header-text-box {
+        top: 48% !important;
+    }
+
+    .navbar-expand-lg .navbar-collapse .navbar-nav .nav-item,
+    .navbar-expand-lg .navbar-collapse .navbar-nav a.nav-link,
+    .navbar-expand-lg .navbar-collapse .navbar-nav {
+        display: inline-block;
+        flex-direction: row;
+    }
+    .card{
+        height: 28rem !important;
+    }
+    .card-side{
+        height: 28rem !important;
+    }
+}
+
+/***************
+BASICS
+***************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'El Messiri', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: 62.5%;
+    direction: rtl;
+    color: #303174;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    direction: rtl;
+}
+
+.focus:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.focus{
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/*********
+HEADER
+*********/
+section{
+    width: 100vw;
+}
+.header {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.header video {
+    z-index: -1;
+    position: absolute;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.header-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f27433;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+/***nav**/
+.navbar {
+    z-index: 2;
+    background-color: transparent;
+}
+.nav2{
+    background-color: #f27433;
+}
+.ul-left {
+    margin-left: 0;
+}
+
+.ul-right {
+    margin-right: 0;
+}
+
+.navbar-brand {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ul-right li.nav-item {
+    margin-left: 3rem;
+}
+
+.ul-left li.nav-item {
+    margin-left: .7rem;
+}
+
+a.nav-link:link,
+a.nav-link:visited {
+    color: #fff !important;
+    font-size: 1.4rem;
+    border-bottom: 3px solid transparent;
+    transition: all .5s;
+}
+
+a.nav-link:hover {
+    border-bottom: 3px solid #303174;
+}
+
+/**header text**/
+.header-text-box {
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+.header-logo {
+    display: none;
+}
+
+a.btn-primary:link,
+a.btn-primary:visited {
+    border-radius: 40px;
+    background-color: #303174;
+    border-color: #303174;
+    width: 10rem;
+    justify-content: center;
+}
+
+a.btn-primary:active,
+a.btn-primary:hover {
+    color: #f27433;
+    background-color: #303174 !important;
+    border-color: #303174 !important;
+}
+/*********
+WE OFFER
+*********/
+.we-offer {
+    margin-top: 7rem;
+}
+h3{
+    width: 10rem;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+    border-bottom: 3px solid #f27433;
+}
+.we-offer .row {
+    margin-top: 5rem;
+}
+
+.we-offer .col-md-4 {
+    text-align: center;
+}
+
+.we-offer .col-md-4 img {
+    padding: 10px;
+}
+
+.we-offer p {
+    color: rgb(117, 117, 117);
+    font-size: 120%;
+}
+
+.we-offer a:link,
+.we-offer a:visited,
+.we-offer a:hover {
+    color: #303174;
+    text-decoration: none;
+}
+/*********
+WHERE WE ARE
+*********/
+.where-we-are {
+    margin-top: 12rem;
+}
+
+.where-we-are .col-md-4 {
+    text-align: center;
+}
+
+.where-we-are .row {
+    margin-top: 5rem;
+}
+
+.where-we-are .col-md-4 img {
+    transform: rotate(20deg);
+    margin: 15px;
+    transition: all 0.5s;
+}
+
+.where-we-are .col-md-4 img:hover {
+    transform: rotate(0deg);
+}
+/*********
+FOR SELL
+*********/
+.for-sell {
+    margin-top: 100px;
+    padding-top: 100px;
+}
+.for-sell h3{
+    width: 15rem;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+    border-bottom: 3px solid #f27433;
+}
+.for-sell .bg {
+    background-image: url(../imgs/subtle-pattern-1.jpg);
+}
+.card {
+    -webkit-perspective: 150rem;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 25rem;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    color: rgb(117, 117, 117);
+}
+.card svg{
+    color: #ff604b;
+    display: inline-block;
+}
+.card h4{
+    margin-top: 10px;
+}
+.card-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f27433;
+    width: 100%;
+    height: 25rem;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0rem 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease
+}
+
+.card-side-front {
+    background-color: #fff
+}
+
+.card-side-back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg)
+}
+
+.card:hover .card-side-front {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg)
+}
+
+.card:hover .card-side-back {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg)
+}
+
+.card-cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+}
+.card-cta a.link:link,
+.card-cta a.link:visited{
+    color: white;
+    font-size: 1rem;
+}
+.for-sell a.btn-primary {
+    margin: 20px auto;
+    display: block;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+/*********
+CONTACT US
+*********/
+.contact-us .bg {
+    background-image: url(../imgs/contact\ us.gif);
+}
+
+.contact-us form {
+    padding: 3rem;
+}
+
+.contact-us a.btn-primary {
+    margin: 20px auto;
+    display: block;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.contact-us .modal-title {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+/*********
+EMAIL
+*********/
+.email {
+    background-color: #ff604b;
+}
+.email h3{
+    width: auto;
+    border: none;
+}
+.email form {
+    padding: 3rem;
+}
+
+.email a.btn-primary {
+    margin: 20px auto;
+    display: block;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*********
+FOOTER
+*********/
+footer {
+    text-align: center;
+    background-image: linear-gradient(to left top, #ef6773, #db567a,
+            #c24a7f, #a64183, #873b83);
+    padding: 50px;
+    font-size: 1rem;
+}
+
+footer .links a:link,
+footer .links a:visited {
+    color: white;
+    border: 0;
+    display: block;
+    padding: 5px;
+}
+
+footer .links a:active,
+footer .links a:hover {
+    color: #f27433;
+    text-decoration: none;
+}
+
+footer .social a:link,
+footer .social a:visited {
+    color: white;
+    border: 0;
+    display: inline-block;
+    padding: 1px;
+}
+
+footer a .fa-twitter:hover {
+    color: #55ADEE;
+    text-decoration: none;
+    transform: scale(1.5);
+    transition-duration: 0.5s;
+}
+
+footer a .fa-facebook-f:hover {
+    color: #3A559F;
+    text-decoration: none;
+    transform: scale(1.5);
+    transition-duration: 0.5s;
+}
+
+footer a .fa-instagram:hover {
+    color: rgba(255, 0, 0, 0.678);
+    text-decoration: none;
+    transform: scale(1.5);
+    transition-duration: 0.5s;
+}
+
+
+/*********
+accordion
+**********/
+.questions{
+    font-size: 1rem;
+}
+.questions h3{
+    width: 17rem;
+}
+.accordion .card {
+    text-align: unset;
+    height: unset;
+}
+
+.accordion .card h2 .btn-link {
+    color: #f27433;
+    text-decoration: none;
+}
+
+.accordion .card h2 .btn-link:hover,
+.accordion .card h2 .btn-link:active {
+    text-decoration: none;
+}
+
+/*********
+for-sell-page
+**********/
+.for-sell-single .bg{
+    font-size: 1rem;
+    background-image: url(../imgs/subtle-pattern-1.jpg);
+}
+.for-sell-single .card {
+    margin-bottom: 3rem;
+    background-color: #fff;
+    height: 28rem;
+}
+
+.for-sell-single .dropdown-toggle {
+    margin: 20px auto;
+}
+
+.for-sell-single .dropdown-toggle:active,
+.for-sell-single .dropdown-toggle:hover {
+    background-color: #303174;
+    outline: none;
+}
+
+.for-sell-single .col-md-4 {
+    padding: 30px;
+}
+
+.for-sell-single nav{
+    margin: 0 auto;
+}
+.pagination a.page-link:hover,
+.pagination a.page-link:active,
+.pagination a.page-link:link,
+.pagination a.page-link:visited {
+    color: #f27433;
+}
+
+
+.col-lg-3 .custom-select {
+    background-color: #303174;
+    color: white;width: 50%;
+    border-radius: 40px;
+    height: 50px;
+}
+
+
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;   
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #f27433;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #f27433;
+    cursor: pointer;
+  }
+
+/*************
+project page
+*************/
+.project{
+    font-size: 1rem;
+}
+.project h3{
+    width: 16rem;
+}
+.search{
+      background-color: #cacaca;
+      padding: 50px;
+  }
+.search .custom-select{
+    background-color: #808080;
+    color: white;
+    width: 12rem;
+    height: 50px;
+    border-radius: 40px;
+}
+
+.project .container-fluid .col-md-3 svg{
+    color:#f27433;
+}
+a.call:link,
+a.call:visited{
+    width: 15rem;padding: 10px;background-color: #ff604b;border-color: #ff604b;color: #fff;
+}
+a.call:hover,
+a.call:active{
+    color:#303174;
+}
+a.email:link,
+a.email:visited{
+    width: 15rem;padding: 10px;background-color: transparent;border-color: #303174;color: #303174;
+}
+a.email:hover,
+a.email:active{
+    background-color:#303174;
+    color: #fff;
+}
+input.form-control[type='search']{
+    background-image: url(../imgs/images.png);
+    background-position: 5%;
+    background-size: 20%;
+    background-repeat: no-repeat;
+    height: 50px;
+    border-radius: 40px;
+    margin-bottom: 5px;
+}
+
+
+/*************
+services page
+*************/
+.services{
+      background-image: url(../imgs/service-page_02.jpg);
+      background-size: cover;
+      z-index: -1;
+      font-size: 1rem;
+      }
+.services .overlay{
+        background-color: #696969;
+        opacity: 0.9;
+        z-index: 1;
+      }
+.light h3{
+    width: 20rem;
+}
+.img-lightbox{
+    padding: 15px;
+    border-radius: 30px;
+}
+a .img-lightbox:hover{
+    transform: scale(1.1) ;
+    transition: ease-in-out 0.5s;
+}
+
+/*********
+staff page
+*********/
+.about .bg{
+    background-image: url(../imgs/about.jpg);
+    background-size: cover;
+    font-size: 1rem;
+}
+.staff{
+    font-size: 1rem;
+}
+.staff h3{
+width: 20rem;
+}
+.staff .card-img-top{
+    border-radius: 30px;
+}
+ 
+
+
+
+
+
+
+

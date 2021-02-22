@@ -1,0 +1,991 @@
+@media only screen and (max-width: 900px) {
+
+    body,
+    html {
+        font-size: 45% !important;
+    }
+}
+
+/************
+BASICS
+************/
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    outline: none;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "cairo";
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: 62.5%;
+    color: #ec3554;
+    direction: rtl;
+}
+
+html {
+    scroll-behavior: smooth;
+    direction: rtl;
+}
+
+.btn:focus,
+button:focus,
+.btn:not(:disabled):not(.disabled).active:focus,
+.btn:not(:disabled):not(.disabled):active:focus,
+.show > .btn.dropdown-toggle:focus {
+    outline: unset;
+    box-shadow: unset;
+    border: unset;
+}
+
+/************
+NAVBAR
+************/
+nav.bg-light {
+    background-color: #ececec !important;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+    color: #ec3554;
+    outline: none;
+}
+
+.navbar-light .navbar-toggler svg {
+    float: left;
+}
+
+ul.navbar-nav {
+    float: left;
+    font-size: 1.2rem;
+}
+
+ul.navbar-nav::after,
+.navbar-light .navbar-toggler svg::after,
+.navbar-light .navbar-toggler::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.navbar.row {
+    margin: 0px !important;
+}
+
+.form-control:focus,
+.form-control-sm:focus {
+    outline: none;
+    box-shadow: unset;
+    border: unset;
+    background-color: #f3f3f3;
+}
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+}
+
+.search_box {
+    width: 50%;
+    position: relative;
+}
+
+.search_box input[type="search"] {
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+    border: unset;
+    border-radius: 10px;
+    outline: none;
+}
+
+.fa-search {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+svg.svg-inline--fa.fa-search.fa-w-16 {
+    color: #ec3554;
+}
+
+.dropdown-toggle::after {
+    content: unset;
+}
+
+#dropdownMenuButton {
+    color: #ec3554;
+}
+
+#dropdownMenuButton:hover .dropdown-menu {
+    display: block !important;
+}
+
+nav svg.svg-inline--fa {
+    font-size: 2rem;
+}
+
+.navbar-brand img {
+    width: 8rem;
+}
+
+.dropdown-menu a {
+    color: #230040;
+}
+
+.dropdown-menu .svg-inline--fa {
+    width: 20%;
+}
+.cart-link:active,
+.cart-link:hover,
+.cart-link:link,
+.cart-link:visited{
+    color: #EC3454;
+}
+/************
+HEADER
+************/
+header {
+    background-image: url(../img/images/header.png);
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    color: white;
+    padding: 10rem;
+}
+
+header .main-heading {
+    font-size: 12vw;
+    padding: 4rem auto;
+    font-family: 'Lemonada', cursive;
+}
+
+header .sub-heading {
+    margin-top: 5rem;
+}
+
+header .btn,
+.food .btn,
+.register .btn,
+.meal .btn,
+.offer-bg .btn,
+.cart .btn,
+.account .btn,
+.contact .btn {
+    border-radius: 40px;
+    margin: 5rem auto;
+    padding: 0.75rem 4rem;
+    background-image: linear-gradient(#EC3454, #A10A4A);
+    border: unset;
+}
+
+.btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/************
+RESTAURANT
+************/
+
+.restaurant {
+    font-size: 2rem;
+    padding: 4.5rem;
+    background-image: url(../img/images/Group\ 1034.png);
+    background-position: top;
+    background-size: cover;
+    color: #230040;
+    text-align: center;
+}
+
+.restaurant .input-group .custom-select {
+    padding: 1.5rem;
+    font-size: 1rem;
+    background-color: #f3f3f3 !important;
+    background: url(../img/images/arrow-pointing-down.svg) no-repeat left 0.75rem center/8px 10px;
+    background-size: 0.75rem;
+    border-radius: 10px;
+    border: unset;
+}
+
+.restaurant .input-group .custom-select option {
+    z-index: 88888;
+}
+
+.restaurant .custom-select:focus {
+    outline: none;
+    box-shadow: unset;
+    border: unset;
+}
+
+.restaurant .input-group {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.restaurant .search_box {
+    width: 70%;
+    font-size: 1rem;
+    margin: 0 auto;
+}
+
+.restaurant .media {
+    background-color: #fff;
+    font-size: 1rem;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: right;
+    margin: 1rem auto;
+}
+
+.restaurant .media h4 {
+    margin-top: 1rem;
+    color: #ec3554;
+    font-weight: 700;
+}
+.restaurant .media .media-body a:visited,
+.restaurant .media .media-body a:link{
+    margin-top: 1rem;
+    color: #ec3554;
+    font-weight: 700;
+}
+.restaurant .media .media-body a:hover,
+.restaurant .media .media-body a:active{
+    margin-top: 1rem;
+    color: #ec3554;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.restaurant-content .open {
+    float: left;
+    margin-top: -1rem;
+}
+
+.checked {
+    color: #ec3554;
+}
+
+/***********
+OFFERS
+***********/
+.offers {
+    padding: 6rem;
+}
+
+.offers .bg {
+    background-image: url(../img/images/offers-bg.jpg);
+    border-radius: 40px;
+    background-size: cover;
+}
+
+.offers .btn {
+    border-radius: 40px;
+    margin: 2rem auto;
+    padding: 0.75rem 4rem;
+    background-image: linear-gradient(#EC3454, #A10A4A);
+    border: unset;
+}
+
+.offers h2.paragraph {
+    color: white;
+    margin-top: 3rem;
+    padding: 3rem 2rem 0 2rem;
+    line-height: 170%;
+}
+
+/**********
+APP
+**********/
+.app {
+    background-image: url(../img/images/Group\ 1035.png);
+    background-position: top;
+    background-size: cover;
+    padding: 6rem 6rem 0 6rem;
+    color: white;
+}
+
+.app h1 {
+    font-size: 3rem;
+}
+
+.app .btn,
+.card .btn {
+    border-radius: 3rem;
+    margin: 2rem auto;
+    padding: 0.75rem 4rem;
+    background-image: url(../img/images/download\ button.png);
+    background-size: cover;
+    border: unset;
+    margin: 8rem auto;
+}
+
+/***********
+FOOTER
+***********/
+footer {
+    background-image: url(../img/images/footer\ bg.png);
+    background-size: cover;
+    background-position: top;
+    padding: 3rem;
+    color: white;
+}
+
+footer h2 {
+    display: inline-block;
+    margin-right: .5rem;
+}
+
+footer .h5 {
+    line-height: 150%;
+}
+
+footer svg.svg-inline--fa {
+    font-size: 2rem;
+}
+
+footer .social a:link,
+footer .social a:visited {
+    color: white;
+    transition: all 0.5s;
+}
+
+footer .social a:hover,
+footer .social a:active {
+    color: #ec3554;
+}
+
+/**************
+restaurant-page
+***************/
+.restaurant-header {
+    padding: 5rem;
+    background-image: url(../img/images/offerss-bg.jpg);
+    background-size: cover;
+}
+
+.rating {
+    color: #230040;
+    background-color: #fff;
+    border-radius: 4rem;
+    padding: 1rem 0.2rem;
+    width: 15rem;
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+
+.food {
+    background-image: url(../img/images/Group\ 1034.png);
+    background-size: cover;
+    background-position: top;
+    padding: 1.5rem;
+}
+
+.food .row {
+    margin: 0;
+    padding: 0;
+}
+
+.food .card {
+    margin: 1rem auto;
+}
+
+.food .small {
+    color: rgb(153, 153, 153);
+    font-size: .8rem;
+}
+
+.food .card,
+.food .card-img-top {
+    border-radius: 2rem;
+}
+
+/************
+restaurant-seller
+*************/
+.food h2 {
+    color: #230040;
+    margin-top: 3rem;
+}
+
+.card {
+    position: relative;
+}
+
+.food .btnDelete {
+    position: absolute;
+    right: 3%;
+    top: 4%;
+    background-color: transparent;
+    border: unset;
+}
+
+.food svg.svg-inline--fa.fa-times-circle.fa-w-16 {
+    color: rgba(0, 0, 0, 0.6);
+
+    font-size: 2rem;
+}
+
+/************
+register
+************/
+.register-bg {
+    background-image: url(../img/images/bg\ img.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.register {
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+}
+
+.form-section {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem 4rem;
+    box-shadow: 20px 20px 40px 15px rgb(192, 192, 192);
+    border-radius: 10px;
+}
+
+.form-section form {
+    margin-top: 3rem;
+}
+
+.register .form-control,
+.form-control-sm {
+    background-color: #f3f3f3;
+    border: unset;
+    border-radius: 20px;
+}
+
+.register input {
+    padding: 2rem;
+}
+.register .btn{
+    padding: 8px 10px;
+}
+.form-section .btn {
+    width: 20vw;
+}
+
+.form-section .links a:link,
+.form-section .links a:visited {
+    text-decoration: none;
+    color: #EC3454;
+    display: inline-block;
+}
+
+.newUser {
+    float: right;
+}
+
+.forgetPass {
+    float: left;
+}
+
+.image-upload > input {
+    display: none;
+    cursor: pointer;
+}
+
+.register textarea {
+    padding: 1.5rem;
+}
+
+.image-upload1 {
+    cursor: pointer;
+}
+
+.add-offer .form-section {
+    background-color: #ececec;
+}
+
+.lightpick__month-title-bar {
+    display: table-footer-group;
+    background-image: unset;
+    direction: ltr;
+}
+
+.lightpick__toolbar {
+    direction: ltr;
+}
+
+/**************
+meal page
+**************/
+.meal {
+    padding-top: 5rem;
+    text-align: center;
+    color: #230040;
+}
+
+.meal .meal-photo {
+    width: 80%;
+    height: 30rem;
+    border-radius: 30px;
+}
+
+.meal h1 {
+    padding: 2rem;
+}
+
+.meal .meal-details {
+    text-align: right;
+    padding: 2rem 5rem;
+}
+
+.meal .meal-details h5 img {
+    width: 3rem;
+}
+
+.meal .btn {
+    display: block;
+}
+
+.meal-info {
+    text-align: right;
+    color: #EC3454;
+}
+
+.meal-info h5 a:link,
+.meal-info h5 a:visited {
+    color: #EC3454;
+    text-decoration: none;
+}
+
+.meal .meal-info .sm {
+    font-size: 1rem;
+    color: rgb(121, 121, 121);
+}
+
+.border-l {
+    border-right: 3px solid #230040;
+    padding: 0.7rem;
+}
+
+div#exampleModal {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #EC3454;
+}
+
+.modal-header .close {
+    text-align: left;
+    margin-right: 0;
+}
+
+.modal h4 {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.close span {
+    border: 2px solid #000;
+    border-radius: 50%;
+    padding: 2px 7px;
+    font: 1em sans-serif;
+    color: #000;
+}
+
+.modal-header {
+    border: unset;
+}
+
+.modal .btn {
+    width: 50%;
+    border-radius: 10px;
+    margin: 1rem auto;
+}
+
+.meal .reviews .review {
+    background-color: #e5e5e5;
+    border-radius: 20px;
+    color: #EC3454;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+
+.meal .reviews .review .rating {
+    margin-right: -10rem;
+}
+
+.meal .reviews .review span {
+    padding: 1rem;
+    font-size: 1.2rem;
+    display: inline-block;
+    float: right;
+}
+
+.review-write h4 {
+    text-align: right;
+    color: #EC3454;
+}
+
+.review-write .rating {
+    background-color: #ececec;
+}
+
+.review-write textarea {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: unset;
+    box-shadow: 0px 0px 10px #c9c9c9;
+    background-color: #f9f9f9
+}
+
+.meal .more-food {
+    color: #EC3454;
+}
+
+.owl-nav {
+    display: none;
+}
+
+.owl-carousel {
+    margin: 5rem auto;
+}
+
+.owl-carousel .owl-dots {
+    margin: 5rem auto;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #EC3454;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: #230040;
+    width: 20px;
+    height: 20px;
+}
+
+.owl-carousel .item img {
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    height: 300px;
+    left: 0;
+}
+
+.owl-carousel .item {
+    position: relative;
+    height: 300px;
+}
+
+.owl-carousel .item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+}
+
+.owl-carousel .item:hover .overlay {
+    display: block;
+    background: rgba(59, 59, 59, 0.4);
+}
+
+
+.owl-carousel .item .button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    transition: opacity .35s ease;
+}
+
+.owl-carousel .item .button a {
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.owl-carousel .item:hover .button {
+    opacity: 1;
+}
+
+/**********
+orders page
+**********/
+.orders div#nav-tab,
+.orders-buyer div#nav-tab {
+    justify-content: center;
+    background-color: #EC3454;
+}
+
+.orders .nav-tabs .nav-link:link,
+.orders .nav-tabs .nav-link:visited,
+.orders-buyer .nav-tabs .nav-link:link,
+.orders-buyer .nav-tabs .nav-link:visited {
+    margin-left: 1rem;
+    padding: 2rem;
+    color: #fff !important;
+    border-bottom: 3px solid transparent;
+}
+
+.orders .nav-tabs .nav-link:hover,
+.orders .nav-tabs .nav-link:active,
+.orders .nav-tabs .nav-link.active,
+.orders-buyer .nav-tabs .nav-link:hover,
+.orders-buyer .nav-tabs .nav-link:active,
+.orders-buyer .nav-tabs .nav-link.active {
+    margin-left: 1rem;
+    color: #fff !important;
+    background-color: transparent;
+    border: unset;
+    border-bottom: 3px solid #230040;
+}
+
+.orders .col-6.media,
+.orders-buyer .col-6.media {
+    padding: 2rem;
+    margin: 1rem auto;
+    background-color: #ececec;
+    border-radius: 20px
+}
+
+.orders .col-6.media .media-body h4,
+.orders-buyer .col-6.media .media-body h4 {
+    color: #230040;
+}
+
+.orders .col-6.media .restaurant-content h5,
+.orders-buyer .col-6.media .restaurant-content h5 {
+    margin-top: 1rem;
+}
+
+.orders .col-6.media .button-orders,
+.orders-buyer .col-6.media .button-orders {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.orders .col-6.media .h6.phone,
+.orders-buyer .col-6.media .h6.phone {
+    background-color: #EC3454;
+    color: #fff;
+    border-radius: 40px;
+    display: inline-block;
+    text-align: center;
+}
+
+.orders .col-6.media .h6.confirm,
+.orders-buyer .col-6.media .h6.confirm {
+    background-color: #009422;
+    color: #fff;
+    border-radius: 40px;
+    display: inline-block;
+    text-align: center;
+}
+
+.orders .col-6.media .h6.refuse,
+.orders-buyer .col-6.media .h6.refuse {
+    background-color: #230040;
+    color: #fff;
+    border-radius: 40px;
+    display: inline-block;
+    text-align: center;
+}
+
+/*************
+offer page
+*************/
+.offer-bg {
+    padding: 3rem 2rem;
+}
+
+.offer-bg h3 {
+    border-right: 2px solid #230040;
+    padding: 2rem;
+}
+
+.offer-bg .row {
+    margin-top: 2rem;
+}
+
+.offer-bg .row .col-md {
+    height: 30rem;
+    margin-top: 2rem;
+}
+
+.offer-bg .row .col-md img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.offer-bg .btn {
+    margin: 2rem auto;
+}
+
+/************
+cart page
+*************/
+.cart {
+    background-image: url(../img/images/cart-bg.png);
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 5rem;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.cart h3 {
+    color: #230040;
+    font-weight: 700;
+}
+
+.cart .media {
+    text-align: right;
+    width: 40vw;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px #c9c9c9;
+    padding: 2rem;
+    margin: 0 auto;
+    color: #230040;
+    margin-bottom: 2rem;
+}
+
+.cart img {
+    height: 10rem;
+    width: 35%;
+    border-radius: 15px;
+}
+
+.cart .btn {
+    margin: 1rem auto !important;
+    padding: 0.8rem 1.5rem;
+}
+
+/************
+my account
+************/
+.account {
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+}
+
+.account .form-section {
+    background-image: linear-gradient(#EC3454, #A10A4A);
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem 4rem;
+    box-shadow: 20px 20px 40px 15px rgb(192, 192, 192);
+    border-radius: 10px;
+}
+
+.account .form-section .svg-inline--fa.fa-user-circle.fa-w-16 {
+    font-size: 8rem;
+    color: #fff;
+}
+
+.account .form-control,
+.form-control-sm {
+    background-color: #f3f3f3;
+    border: unset;
+    border-radius: 20px;
+}
+
+.account input {
+    padding: 2rem;
+}
+
+.account textarea {
+    padding: 1.5rem;
+}
+
+.account .btn {
+    background-color: #230040;
+    background-image: unset;
+}
+
+/************
+contact us
+************/
+.contact {
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+    color: #fff;
+}
+
+.contact h4 {
+    color: white;
+    margin-top: 3rem;
+}
+
+.contact .form-section {
+    background-image: linear-gradient(#EC3454, #A10A4A);
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem 4rem;
+    box-shadow: 20px 20px 40px 15px rgb(192, 192, 192);
+    border-radius: 10px;
+}
+
+.contact .form-control,
+.form-control-sm {
+    background-color: #f3f3f3;
+    border: unset;
+    border-radius: 20px;
+}
+
+.contact input {
+    padding: 2rem;
+}
+
+.contact textarea {
+    padding: 1.5rem;
+}
+
+.contact .btn {
+    background-color: #230040;
+    background-image: unset;
+}
+
+.contact .radio {
+    font-size: 1.5rem;
+    margin: 3rem auto;
+}
+
+.contact .radio input {
+    margin-left: 1rem;
+    margin-right: 0.25rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+}
